@@ -1,0 +1,126 @@
+div[container] {
+  div[content] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin: 80px 0;
+      text-align: center;
+      padding: 24px 32px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+
+      .cliente-container {
+        display: flex;
+        flex-direction: row;
+
+        .cliente-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          width: 50%;
+
+          .cliente-info-conteiner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .cliente-info-content {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+
+              img {
+                height: 200px;
+                margin-right: 16px;
+              }
+            }
+
+            mat-form-field {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+            }
+          }
+        }
+
+        .email-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 32px;
+
+          table {
+            background-color: transparent;
+            width: 100%;
+
+            .mat-header-cell {
+              font-size: 14px;
+            }
+
+            .mat-footer-cell {
+              font-weight: bold;
+            }
+
+            .mat-cell,
+            .mat-header-cell,
+            .mat-footer-cell {
+              padding-left: 12px;
+              padding-right: 12px;
+
+              &:first-of-type {
+                padding-left: 30px;
+              }
+
+              &:last-of-type {
+                padding-right: 30px;
+              }
+            }
+
+            .mat-icon {
+              height: 20px !important;
+              width: 20px !important;
+              font-size: 20px !important;
+            }
+          }
+        }
+      }
+
+      .btn-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 32px;
+
+        button {
+          font-size: 16px;
+          height: 48px;
+          border-radius: 24px;
+          width: 100%;
+
+          &:hover {
+            opacity: 0.9;
+          }
+
+          & + button {
+            margin-top: 8px;
+          }
+        }
+
+        .btn-voltar {
+          background: #fabf10;
+          margin-top: 32px !important;
+        }
+      }
+    }
+  }
+}

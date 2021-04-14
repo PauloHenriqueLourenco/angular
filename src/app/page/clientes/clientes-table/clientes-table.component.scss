@@ -1,0 +1,41 @@
+:host {
+  .loading-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 56px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  table {
+    width: 100%;
+
+    .mat-header-cell {
+      font-size: 14px;
+    }
+
+    .mat-footer-cell {
+      font-weight: bold;
+    }
+
+    .mat-cell,
+    .mat-header-cell,
+    .mat-footer-cell {
+      padding-left: 12px;
+      padding-right: 12px;
+
+      &:first-of-type {
+        padding-left: 30px;
+      }
+
+      &:last-of-type {
+        padding-right: 30px;
+      }
+    }
+  }
+}
